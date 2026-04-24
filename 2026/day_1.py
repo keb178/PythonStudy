@@ -1,7 +1,0 @@
-print('hello world')
-print('The quick brown fox','jumps over','the lazy dog')
-name=input("please enter your name:")
-print('hello',name)
-the_first_number=int(input("please enter the first number:"))
-the_second_number=int(input("please enter the second number:"))
-print(the_first_number,'*',the_second_number,'=',the_first_number*the_second_number)
