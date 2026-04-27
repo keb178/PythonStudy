@@ -34,6 +34,7 @@ last_name="lovelace"
 full_name=f"{first_name} {last_name}"
 print(f"Hello,{full_name.title()}！")
 #message=f"Hello,{full_name.title}"出问题了！！！
+
 message=f"Hello,{full_name.title()}!"#没写（），没写！，以后要注意
 print(message)
 print("\n")
@@ -52,7 +53,7 @@ print(favorite_language,"\n")
 print(f"{favorite_language.upper().rstrip('.')}")#在括号里加上'.'就可以去掉我所打的句号
 print()#我的猜测是这样子打印出来的是空白，又因为这行代码占了一行，所以就可以展现换行符\n的表现了
 cleaned=favorite_language.rstrip('.')
-print(repr(favorite_language))
+print(repr(favorite_language))#repr可以显示空白是否去除
 print()
 
 
@@ -70,6 +71,9 @@ haowan="java        "
 haowa=haowan.rstrip()
 print(haowa)
 print(repr(haowa))
+
+
+
 print()
 print('\n\n\n')
 
@@ -99,8 +103,32 @@ full_name=f"{first_name} {middle_name} {last_name}"
 #print("我的名字：",full_name)  三令五申说在字符串中加变量时要么用逗号','要么用'+'隔开！！！
 #print("我的名字（大写版本）：" full_name.upper())
 #print("我的名字(首字母大写版本):"full_name.title())
-
 print("我的名字：",full_name)
 print("我的名字(小写版本)：",full_name.lower())
 print("我的名字（大写版本）：",full_name.upper())
 print("我的名字（首字母大写版本）：",full_name.title())#还没完
+print(f"我的名字{full_name}\t 我的名字（小写版本）:{full_name.lower()}\t 我的名字（大写版本）:{full_name.upper()}\t 我的名字（首字母大写版本）：{full_name.title()}")
+
+
+
+print("\n\n\n")
+print("练习2-5")
+人名="玩机器machine"
+玩机器的名言="'这真别玩了，我无语了，这真流脓了Device!'"
+print(f"{人名.title()} said:{玩机器的名言}")
+name="alber einstein"
+中文翻译="爱因斯坦"
+Famous_Quotes="Imagination is moreimportant than knowledge"
+名人名言="想象力比知识更重要"
+print(f"{name.title()}({中文翻译}) said: {Famous_Quotes.title()}!({名人名言})")
+
+
+
+print("\n\n\n")
+print("练习2-7")
+name="\t\t\tkuerbanjiang\t\t\t"
+print(repr(name))
+print(repr(name.lstrip()))
+print(repr(name.rstrip()))
+print(repr(name.strip()))
+
