@@ -288,5 +288,10 @@ print(f"{name_B}的文件大小是：{File_size_B}MB\n上传状态：{'允许' i
 
 print("第二个程序")
 raw_name="\t\n Zhang san  \n\t"
-print(raw_name)
-stripped_name.
+print(repr(raw_name))
+stripped_name=raw_name.strip()
+print(repr(stripped_name))
+left_name=raw_name.lstrip()
+print(repr(left_name))
+right_name=raw_name.rstrip()
+print(repr(right_name))
