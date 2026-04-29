@@ -236,7 +236,7 @@ print(chufa)#在涉及除法时，python就自动的进入带小数点的世界�
 
 
 print("\n\n\n")
-print("练习2-9：最喜欢的数")
+print("练习2-1：最喜欢的数")
 #love_numver,talk,=21,我最喜欢的数字!!!是lover_number不是love_numver;而且talk后面不要带逗号
 love_number,talk=21,"我最喜欢的数字是："
 print(f"{talk}{love_number}")
@@ -295,3 +295,144 @@ left_name=raw_name.lstrip()
 print(repr(left_name))
 right_name=raw_name.rstrip()
 print(repr(right_name))
+
+
+
+print("\n\n\n")
+print(".26 python之禅")
+print("import this")
+print("Beautiful is better than ugly\n优美胜于丑陋")
+print("Explice is better than complex\n明了胜于晦涩")
+print("Simple is  better than complex\n简单胜于复杂")
+print("complex is better than complicated\n复杂胜于繁杂")
+print("Flat is better than nested\n扁平胜于嵌套")
+print("Sparse os better than dense\n稀疏胜于密集")
+print("Readability counts\n可读性至关重要")
+print("Special caases aren't special enough to break the rule\n特例不足以违背规则")
+print("Although practicality beats purity\n尽管实用性优先于纯粹")
+print("Errors should never pass silently\n错误绝不悄然放过")
+print("Unless explictly silence\n除非刻意静默处理")
+print("In the face of ambiguity,refuse the temptation to guess\n面对歧义，切忌主观臆断")
+print("There should be one --and preferable only one--obvious way to do it\n做事应有且最好只有一种显而易见的方式")
+print("Although that way may not be obvious at first unless you're Dutch\n尽管这种方式起初未必显而易见，除非你是荷兰人")
+print("Now is better than never\n行动胜于拖延")
+print("Although never is often better than right now\n但草率行事不如永不行动")
+print("If the implementation is hard to explain,it's a bad idea\n难以解释的实现，绝非好思路")
+print("If the implementation is easy to explain,it may be a good idea\n易于阐释的实现，或许是好设计")
+print("Namespaces are one honking great idea --let's do more of those\n命名空间简直绝妙，多多益善")
+print("练习2-11 Python之禅")
+
+
+
+print("\n\n\n")
+print("第三章 列表简介")
+print("3.1 列表是什么")
+bicycles=['terk','cannondale','redline','specialized']
+print(bicycles)
+
+
+
+print("\n\n\n")
+print("3.1.1访问列表元素")
+bicycles=['trek','cannondale','rediline','specialized','hello']
+print(bicycles[0])
+print(bicycles[-5])#当然也可以反向索引
+#print(bicycles[5])！！！列表的索引是从0开始的，这个超范围了！！！
+print(bicycles[4])
+
+
+print("\n\n\n")
+print('下面这段代码可以帮助我理解python会使用最后一次赋值的那个列表')
+cau=['理学院','工学院','食品学院','国际学院','资环学院','植保学院']
+print("第一次复制后：",cau)
+cau=['理学院','工学院','食品学院','国际学院','资环学院','植保学院','动物医学院','动物保护学院']
+print("第二次赋值后：",cau)
+print(cau[3])
+
+
+bicycles=['trek','cannondale','redline','specialzed']
+print(bicycles[0].title())
+#print(bicycles[4])!!!这里就很好的解释了python是从最后一次赋值的那个列表开始赋值的
+
+
+print("\n\n\n")
+print("3.1.2 索引从0开始而不是从1开始")
+bicycles=['trek','cannondale','redline','speciallized']
+print(bicycles[1])
+#print(biclcles[3])!!!!是bicycles不是biclcles!!!!
+bicycles=['trek','cannondate','redline','speecialized']
+print(bicycles[-1])
+
+
+
+print("\n\n\n")
+print("3.13 使用列表中的各个值")
+bucycles=['trek','cannnondale','redine','specialized']
+message=f"my first bicycle was a {bicycles[0].title()}."
+print(message)
+
+
+
+print("\n\n\n")
+print("练习3-1 姓名")
+names=['库尔班江','艾热提','古力先木','美迪娜']
+Address=['myself','My father','My mother','My yonger sister']#Address:社交称呼
+message="的名字是："
+print(f"{Address[0]}{message}{names[0]},\n{Address[1]}{message}{names[1]},\n{Address[2]}{message}{names[2]},\n{Address[3]}{message}{names[3]}")
+
+
+
+
+print("\n\n\n")
+print('or')
+names=['库尔班江','艾热提','古力先木','美迪娜']
+ps=['艾尼','阿不力孜']
+Address=['my','My father','My mother','My yonger sister']
+message=['name is:','full name']
+sentence_1=f"{Address[0]} {message[0]} {names[0]},my {message[1]} is {names[1]}"
+sentence_2=f"{Address[1]} {message[0]} {names[1]},his {message[1]} is {ps[1]}"
+sentence_3=f"{Address[2]} {message[0]} {names[2]},her {message[1]} is {ps[1]}"
+sentence_4=f"{Address[3]} {message[0]} {names[3]},her {message[1]} is {names[1]}"
+#print(sentence_1+'\n',sentence_2+'\n',sentence_3+'\n',sentence_4)！！！这样写前面会有空格，不是很好看
+print(f"{sentence_1}\n{sentence_2}\n{sentence_3}\n{sentence_4}")
+
+
+
+print("\n\n\n")
+print("练习3-2:问候语")
+message_1="开心一点！"
+message_2="下班没"
+message_3="吃饭没"
+message_4="你是最棒的！！！"
+ps=['艾尼','阿不力孜','我想对我/他/她说：']
+sentence_5=f"{sentence_1},{ps[2]} {message_1}"
+sentence_6=f"{sentence_2},{ps[2]} {message_2}"
+sentence_7=f"{sentence_3},{ps[2]} {message_3}"
+sentence_8=f"{sentence_4},{ps[2]} {message_4}"
+print(f"{sentence_5}\n{sentence_6}\n{sentence_7}\n{sentence_8}")
+
+
+
+print("\n\n\n")
+print("练习3-3：自己的列表")
+Main_mode_of_commuting=['汽车','摩托车','小电驴','地铁','公交车']
+Favorite_brand=['奔驰','杜卡迪','雅迪','15号线','10路车']
+message=['我最喜欢的','品牌','线路']
+'''
+sentence_1=f"{message[0],Main_mode_of_commuting[0],message[1]:,Favorute_branf[0]}"
+sentence_2=f"{message[0],Main_mode_of_commuting[1],message[1]:,Favorute_branf[1]}"
+sentence_3=f"{message[0],Main_mode_of_commuting[2],message[1]:,Favorute_branf[2]}"
+sentence_4=f"{message[0],Main_mode_of_commuting[3],message[1]:,Favorute_branf[3]}"
+sentence_5=f"{message[0],Main_mode_of_commuting[4],message[1]:,Favorute_branf[4]}"
+print(f"{sentence_1}\n{sentence_2}\n{sentence_3}\n{sentence_4}\n{sentence_5}\n")
+1.是Favorite_brand,不是Favorute_branf  
+2.冒号，逗号，空格作为普通字符放在花括号外面，花括号里面只放入变量！！！
+'''
+#sentence_1=f"{message[0]},{Main_mode_of_commuting[0]},{message[1]}:,{Favorute_branf[0]}"
+#又他妈的犯了：是Favorite_brand!!!
+sentence_1=f"{message[0]}{Main_mode_of_commuting[0]}{message[1]}:{Favorite_brand[0]}"
+sentence_2=f"{message[0]}{Main_mode_of_commuting[1]}{message[1]}:{Favorite_brand[1]}"
+sentence_3=f"{message[0]}{Main_mode_of_commuting[2]}{message[1]}:{Favorite_brand[2]}"
+sentence_4=f"{message[0]}{Main_mode_of_commuting[3]}{message[2]}:{Favorite_brand[3]}"
+sentence_5=f"{message[0]}{Main_mode_of_commuting[4]}{message[2]}:{Favorite_brand[4]}"
+print(f"{sentence_1}\n{sentence_2}\n{sentence_3}\n{sentence_4}\n{sentence_5}")
