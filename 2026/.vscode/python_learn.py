@@ -436,12 +436,112 @@ sentence_3=f"{message[0]}{Main_mode_of_commuting[2]}{message[1]}:{Favorite_brand
 sentence_4=f"{message[0]}{Main_mode_of_commuting[3]}{message[2]}:{Favorite_brand[3]}"
 sentence_5=f"{message[0]}{Main_mode_of_commuting[4]}{message[2]}:{Favorite_brand[4]}"
 print(f"{sentence_1}\n{sentence_2}\n{sentence_3}\n{sentence_4}\n{sentence_5}")
-1111
-1
 
 
-1
-1
-1
-1
-print("111")
+
+print("\n\n\n")
+print("3.2修改，添加和删除元素")
+print("3.2.1 修改列表的元素")
+motorcycles=['honda','yamaha','suzuki']
+print(motorcycles)
+motorcycles[0]='ducati'
+print(motorcycles)
+
+
+
+print("\n\n\n")
+print("3.2.2在列表中添加元素")
+print("在列表末尾添加元素")
+motorcycles=['honda','yamaha','suzuki']
+print(motorcycles)
+motorcycles.append('ducati')
+motorcycles.append("BMW Motorrad")
+print(motorcycles)
+motorcycles=[]
+motorcycles.append('honda')
+motorcycles.append('yamaha')
+motorcycles.append('suzuki')
+print(motorcycles)
+
+
+
+print('\n\n\n')
+print("02 在列表中插入元素")
+motorcycles=['honda','yamaha','suzuki']
+print(motorcycles)
+motorcycles.insert(0,'ducati')
+print(motorcycles)
+motorcycles.insert(1,'kawasaki')
+print(motorcycles)
+
+
+
+print('\n\n\n')
+print("3.2.3 从列表中删除元素")
+print("01 使用del语句删除元素")
+motorcycles=['honda','yamaha','suzuki']
+print(motorcycles)
+del motorcycles[0]
+print(motorcycles)
+
+motorcycles=['honda','yamaha','suzuki']
+print(motorcycles)
+del motorcycles[1]
+print(motorcycles)
+
+
+
+print('\n\n\n')
+print('02 使用方法pop()删除元素')
+motorcycles=['honda','yamaha','suzuki']
+print(motorcycles)
+popped_motorcycles=motorcycles.pop()
+print(motorcycles)
+print(popped_motorcycles)
+
+motorcycles=['honda','yamaha','suzuki']#搞了一个列表出来
+last_owend=motorcycles.pop()#因为方法pop()是将列表最后一个元素删除并弹出来，所以在这里我们就可以使用这个特性来显示motorcycles这个列表中最后一个元素
+print(f"Then last motorcycle I owend was a {last_owend.title()}")
+
+
+
+print("\n\n\n")
+print("03.弹出列表中任何位置的元素")
+motorcycles=['honda','yamaha','suzuki']
+first_owend=motorcycles.pop(0)
+print(f"The first motorcycles i owend was a {first_owend.title()}")
+print(motorcycles[0])
+
+
+
+print("\n\n\n")
+print("04.根据值删除元素")
+motorcycles=['honda','yamaha','suzuki','ducati']
+print(motorcycles)
+motorcycles.remove('ducati')
+print(motorcycles)
+
+motorcycles=['honda','yamaha','suzuki','ducati']
+print(motorcycles)
+too_expensive='ducati'
+motorcycles.remove(too_expensive)
+print(motorcycles)
+print(f"\nA {too_expensive.title()} is too expensive for me.")
+
+
+
+print("\n\n\n")
+print("练习3-4：嘉宾名单：")
+man=['小明','小白','小黑','小绿','小红']
+the_deceased=['小粉','小黄','小橙','小紫']
+mingdan=f"{man} {the_deceased}"
+message=['你好','我想邀请你和他人一起共进晚餐','这里是我邀请的人员名单']
+print(f"{message[0]} {man[0]},{message[1]},{message[2]}:{mingdan}")
+print(f'{message[0]} {man[1]},{message[1]},{message[2]}:{mingdan}')
+print(f"{message[0]} {man[2]},{message[1]},{message[2]}:{mingdan}")
+print(f"{message[0]} {man[3]},{message[1]},{message[2]}:{mingdan}")
+print(f"{message[0]} {man[4]},{message[1]},{message[2]}:{mingdan}")
+print(f"{message[0]} {the_deceased[0]},{message[1]},{message[2]}:{mingdan}")
+print(f"{message[0]} {the_deceased[1]},{message[1]},{message[2]}:{mingdan}")
+print(f"{message[0]} {the_deceased[2]},{message[1]},{message[2]}:{mingdan}")
+print(f"{message[0]} {the_deceased[3]},{message[1]},{message[2]}:{mingdan}")
