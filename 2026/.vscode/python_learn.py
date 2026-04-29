@@ -436,3 +436,12 @@ sentence_3=f"{message[0]}{Main_mode_of_commuting[2]}{message[1]}:{Favorite_brand
 sentence_4=f"{message[0]}{Main_mode_of_commuting[3]}{message[2]}:{Favorite_brand[3]}"
 sentence_5=f"{message[0]}{Main_mode_of_commuting[4]}{message[2]}:{Favorite_brand[4]}"
 print(f"{sentence_1}\n{sentence_2}\n{sentence_3}\n{sentence_4}\n{sentence_5}")
+1111
+1
+
+
+1
+1
+1
+1
+print("111")
