@@ -436,12 +436,100 @@ sentence_3=f"{message[0]}{Main_mode_of_commuting[2]}{message[1]}:{Favorite_brand
 sentence_4=f"{message[0]}{Main_mode_of_commuting[3]}{message[2]}:{Favorite_brand[3]}"
 sentence_5=f"{message[0]}{Main_mode_of_commuting[4]}{message[2]}:{Favorite_brand[4]}"
 print(f"{sentence_1}\n{sentence_2}\n{sentence_3}\n{sentence_4}\n{sentence_5}")
-1111
-1
 
 
-1
-1
-1
-1
-print("111")
+
+print("\n\n\n")
+print("3.2 修改，添加和删除元素")
+print("3.2.1 修改列表元素")
+motorcycles=['honda','yamaha','suzuki']
+print(motorcycles)
+motorcycles[0]='ducati'
+print(motorcycles)
+
+
+
+print("\n\n\n")
+print("3.2.2 在列表中添加元素")
+print("01 在列表末尾添加元素")
+motorcycles=['honda','yamaha','suzuki']
+print(motorcycles)
+motorcycles.append('ducati')
+print(motorcycles)
+
+
+motorcycles=[]
+motorcycles.append('honda')
+motorcycles.append('yamaha')
+motorcycles.append('suzuki')
+print(motorcycles)
+
+
+
+print('\n\n\n')
+print("02 在列表中插入元素")
+motorcycles=['honda','yamaha','suzuki']
+motorcycles.insert(0,'ducati')
+print(motorcycles)
+
+
+
+print("\n\n\n")
+print("3.2.3 从列表中删除元素")
+print("01 使用del语句删除元素")
+motorcycles=['honda','yamaha','suzuki']
+print(motorcycles)
+del motorcycles[0]
+print(motorcycles)
+
+motorcycles=['honda','yamaha','suzuki']
+print(motorcycles)
+del motorcycles[1]
+print(motorcycles)
+
+
+
+print('\n\n\n')
+print("02.使用pop()删除元素")
+motorcycles=['honda','yamaha','suzuki']
+print(motorcycles)
+#popped_motorcycles=motorcycles.pop!!!!不加括号的话python以为我们在这个变量里存的是pop这个方法而不是执行pop()这个方法后的结果
+popped_motorcycles=motorcycles.pop()
+print(motorcycles)
+print(popped_motorcycles)
+
+
+motorcycles=['honda','yamaha','suzuki']
+last_owned=motorcycles.pop()
+print(f"The last motorcycles I owend was a{last_name}.")
+
+
+
+print("\n\n\n")
+print("03.弹出列表中任何位置处的元素")
+motorcycles=['honda','yamaha','suzuki']
+first_owned=motorcycles.pop(0)
+print(f"The first motorcycles I owend was a {first_owned.title()}.")
+
+
+
+print('\n\n\n')
+print("04.根据值删除元素")
+motorcycles=['honda','yamaha','suzuki','ducati']
+print(motorcycles)
+motorcycles.remove('ducati')
+print(motorcycles)
+
+motorcycles=['honda','yamaha','suzuki','ducati']
+print(motorcycles)
+too_expensive='ducati'
+motorcycles.remove(too_expensive)
+print(motorcycles)
+print(f"\nA {too_expensive.title()} is too expensive for me.")
+
+
+
+print('\n\n\n')
+print("练习3-4：嘉宾名单")
+name=['熊大','熊二','光头强','翠花','蹦蹦','吉吉国王','毛毛']
+message=['你好','我想邀请你来参加我的晚宴','这个是我所邀请的人员名单']
