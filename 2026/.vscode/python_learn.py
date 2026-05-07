@@ -544,3 +544,55 @@ print("等会打完csgo写")
 
 print('\n\n\n')
 print("2026年5月6日请个假，实在不想学东西了")
+
+
+
+print("\n\n\n")
+#import os
+#os.system('cls')!!!这两行代码能够把控制台的历史记录清理干净
+print("练习3—4：嘉宾名单")
+name=['熊大','熊二','光头强','翠花','蹦蹦','吉吉国王','毛毛']
+message="你好，我想邀请你来参加我的晚宴，这个是我所邀请的人员名单："
+#print(f"{name[0]} {message[0]},{message[1]},{message[2]}:{name}")!!!这行代码是对的但就是有点不好看，所以我们要用到下面的方法.join来解决他
+beautiful_name_list='，'.join(name)
+print(f"{name[0]:6} {message}{beautiful_name_list}")#{name[0]:5}这个:5是在固定名字的宽度为5 
+#print(f"{naem[1]} {message}{beautiful_name_list}")!!!是name不是naem!!!
+print(f"{name[1]:6} {message}{beautiful_name_list}")
+print(f"{name[2]:6} {message}{beautiful_name_list}")
+print(f"{name[3]:6} {message}{beautiful_name_list}")
+print(f"{name[4]:6} {message}{beautiful_name_list}")
+print(f'{name[5]:6} {message}{beautiful_name_list}')
+#print(f"{name[6]} {message}{beautiful_naem_list}")!!！这里也是，是name不是naem!!!
+print(f"{name[6]:6} {message}{beautiful_name_list}")
+
+
+
+print('\n\n\n')
+print("练习3-5：修改嘉宾名单：")
+'''
+name_linshi="李老板"
+name=['熊大','熊二','光头强','翠花','蹦蹦','吉吉国王','毛毛']
+print(f"{name[0]:6} 你好，很抱歉{name[3]}无法到来了，所以我们临时邀请了{name_linshi}")
+print("邀请人员名单")
+'''
+name=['熊大','熊二','光头强','翠花','蹦蹦','吉吉国王','毛毛']
+regrets=name.pop(3)
+new_name='李老板'
+name.insert(3,new_name)
+beautiful_name_list=','.join(name)
+print(f"你好{name[0]},在刚刚的邀请人员中{regrets}无法来到晚宴，不过{name[3]}说可以来,\n所以最新的名单为{beautiful_name_list}")
+
+
+
+print("\n\n\n")
+print("练习3-6：添加嘉宾")
+print("大家好我刚找到了一个更大的餐桌，可以容纳更多的嘉宾，所以我又邀请了：")
+name.insert(0,'niko')
+name.insert(3,'jee')
+name.append('devise')
+print(name)
+
+
+
+print('\n\n\n')
+print("练习3-7：缩减名单")
