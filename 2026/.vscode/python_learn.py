@@ -673,3 +673,67 @@ del name[0]
 del name[0]
 del name[0]
 print(name)
+
+
+
+print('\n\n\n')
+print('3.3组织列表')
+print('3.3.1使用方法sort()对列表永久排序')
+cars=['bmw','audi','toyota','subaru']
+cars.sort()
+print(cars)
+cars.sort(reverse=True)
+print(cars)
+
+
+
+print('\n\n\n')
+print('3.3.2 使用函数sorted()对列表临时排序')
+cars=['bmw','audi','toyota','subaru']
+print('Here is the original list:')
+print(cars)
+print('\nHere is the sorted list:')
+print(sorted(cars))
+print('\nHere is the original list again:')
+print(cars)
+
+
+
+print('\n\n\n')
+print('3.3.3 倒着打印列表')
+cars=['bmw','audi','toyota','subaru']
+print(cars)
+cars.reverse()
+print(cars)
+
+
+
+print('\n\n\n')
+print('3.3.4 确定列表长度')
+car=['bmw','audi','toyota','subaru']
+len(cars)
+print(len(cars))
+
+
+
+print('\n\n\n')
+print('练习3-8：放眼世界')
+didian=['beijin','hami','xingxilan','beiji','nanji','yingdunixiya','aodaliya']
+print(didian)
+#sorted(didian)!!!!sorted()是一个有返回值的函数,我们不能光调用不去接这个返回值
+#print(didian)
+print(sorted(didian))
+#sorted(reverse=True.didain) ！！！reverse=True是sorted函数的一个参数，必须放在括号里用逗号隔开 ❌ 拼写也错了，是 didian
+# print(didian)
+sorted(didian,reverse=True)
+print(didian)
+#didian.reverse=True!!!!reverse() 是一个方法。它直接对原列表进行操作，不产生新列表，也没有返回值给你。你不需要用等号去赋值，直接调用它就行。
+#print(didian)
+didian.reverse()
+print(didian)
+#didian.reverse=True
+#print(didian)
+#didian.sort()
+#print(didian)
+#didian.sort()
+#print(didian)
