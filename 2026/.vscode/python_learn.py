@@ -546,7 +546,7 @@ print('\n\n\n')
 print("2026年5月6日请个假，实在不想学东西了")
 
 
-
+'''
 print("\n\n\n")
 #import os
 #os.system('cls')!!!这两行代码能够把控制台的历史记录清理干净
@@ -596,3 +596,80 @@ print(name)
 
 print('\n\n\n')
 print("练习3-7：缩减名单")
+name=['熊大','熊二','光头强','翠花','蹦蹦','吉吉国王','毛毛']
+'''
+
+
+print('\n\n\n')
+print('回来了，重新把事情搞完')
+print('练习3-4：嘉宾名单')
+#这几个练习我看能不能将他们穿起来
+name=['熊大','熊二','光头强','翠花','蹦蹦','吉吉国王','毛毛']
+message='你好，我想邀请你参加晚宴'
+print(f"{name[0]},{message}")
+print(f"{name[1]},{message}")
+print(f"{name[2]},{message}")
+print(f"{name[3]},{message}")
+print(f"{name[4]},{message}")
+print(f"{name[5]},{message}")
+print(f"{name[6]},{message}")
+
+
+
+print('\n\n\n')
+print('练习3-5：修改嘉宾名单')
+name_1=['涂涂','萝卜头']
+message_1=f'很抱歉{name[0]}和{name[1]}来不了了，不过{name_1[0]}和{name_1[1]}愿意来，所以晚宴名单更新为：'
+name[0]=name_1[0]
+name[1]=name_1[1]
+print(f'{name[0]},{message}')
+print(f'{name[1]},{message}')
+print(f'{name[2]},{message_1}{name}')
+print(f'{name[3]},{message_1}{name}')
+print(f'{name[4]},{message_1}{name}')
+print(f'{name[5]},{message_1}{name}')
+print(f'{name[6]},{message_1}{name}')
+
+
+
+print('\n\n\n')
+print('练习3-6：添加嘉宾')
+name.append('肥波')
+name.insert(0,'老鳄')
+name.insert(4,'拖拖')
+name.insert(5,'铁掌大师')
+print(f'大家好我找到了更大的桌子，所以我又邀请了三个人,它们分别是:{name[0]},{name[4]},{name[5]},{name[10]}')
+print(f"大家好，最新的晚宴名单为：{name}")
+
+
+
+print('\n\n\n')
+print('练习3-7：缩减名单')
+print(name)
+print('抱歉各位因为新购买的桌子无法及时送达，因此只能邀请两名嘉宾')
+name.insert(0,'很抱歉我无法邀请你参加晚宴了')
+name_2=name.pop()
+print(f'{name_2},{name[0]}')
+name_2=name.pop()
+print(f'{name_2},{name[0]}')
+name_2=name.pop()
+print(f'{name_2},{name[0]}')
+name_2=name.pop()
+print(f"{name_2},{name[0]}")
+name_2=name.pop()
+print(f'{name_2},{name[0]}')
+name_2=name.pop()
+print(f'{name_2},{name[0]}')
+name_2=name.pop()
+print(f"{name_2},{name[0]}")
+name_2=name.pop()
+print(f'{name_2},{name[0]}')
+name_2=name.pop()
+print(f"{name_2},{name[0]}")
+print(f"{name[1]},你好，你仍然在邀请名单里")
+print(f"{name[2]},你好，你仍然在邀请名单里")
+print(name)
+del name[0]
+del name[0]
+del name[0]
+print(name)
