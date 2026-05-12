@@ -965,3 +965,59 @@ print('\n\n\n')
 print('3.5 小结')
 print('这一章我没怎么记住，就是总是想不来这个增加元素用哪一个，删除用哪一个，想不起来怎么拼，这一章未来需要加强')
 
+
+
+print('\n\n\n')
+print('第4章 操作列表')
+print('4.1 遍历整个列表')
+magicians=['alice','david','carolina']
+for magician in magicians:
+    print(magician)
+
+
+
+print('\n\n\n')
+print('4.1.1深入研究循环')
+
+
+
+print('\n\n\n')
+print('4.1.2 在for循环中执行更多的操作')
+magicians=['alice','david','carolina']
+for magician in magicians:
+    print(f"{magician.title()},that was a great trick!")
+
+magicians=['alice','david','carolina']
+for magician in magicians:
+    print(f"{magician.title()},that was a great trick")
+    print(f"I can not wait to see your next trick,{magician.title()}.\n")
+
+
+
+print('\n\n\n')
+print('4.13 在for循环结束后执行一些操作')
+magicians=['alice','david','carolina']
+for magician in magicians:
+    print(f"{magician.title()},that was a great trick!")
+    print(f"I can not wait to see your next trick,{magician.title()}.\n")
+print("Thank you,everyone.That was a great magic show!")
+
+
+
+print('\n\n\n')
+print('4.2 避免缩进错误')
+
+print('4.2.1 忘记缩进')
+magicians=['alice','david','carolina']
+for magician in magicians:
+#print(magician)!!!没有缩进
+    print(magician)
+
+
+
+print('\n\n\n')
+print('4.2.2 忘记缩进额外的代码行')
+magicians=['alice','david','carolina']
+for magician in magicians:
+    print(f"{magician.title()},that was a great trick!")
+print(f"I can not wait to see your next trick,{magician,title()}.\n")#不对
