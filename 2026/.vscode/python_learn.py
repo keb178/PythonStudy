@@ -895,3 +895,73 @@ print(len(youxi))
 
 
 print('\n\n\n')
+print('3.4 使用列表时避免索引错误')
+motorcycles=['honda','yamaha','suzuki']
+#print(motorcycles[3])!!!这个列表里面只有三个元素，没有第四个元素，这会触发索引错误
+
+#当然当我们想要访问最后一个元素时我们就可以使用索引-1
+motorcycles=['honda','yamaha','suzuki']
+print(motorcycles[-1])
+
+#当然，当列表为空时我们这样访问就会出错
+motorcycles=[]
+#print(motorcycles[-1])!!!
+
+
+
+print('\n\n\n')
+print('练习3-11：有意引发错误')
+# 假设这是AETS系统中“大模型时代”的几个关键里程碑事件
+ai_events = ['Transformer提出', 'GPT-3发布', 'ChatGPT发布', 'Agent原型出现', '工业AI Agent萌芽']
+
+# 1. 你的任务：有意引发一个索引错误 (IndexError)
+# 目前列表中有几个事件？试着去访问一个根本不存在的索引。
+# 把你的代码写在下面：
+print(len(ai_events))
+#print(ai_events[5])！！！我这里模拟的是在前面看到这个列表的长度为5后想要访问最后一个索引时忘记-1的错误
+# 2. 解释一下：你看到的错误信息写的是什么？它告诉了你哪些重要信息？
+# （用注释回答）
+'''
+发生异常: IndexError    索引错误
+list index out of range     列表索引超出范围
+  File "D:\visual studio\vscode\PythonStudy\2026\.vscode\python_learn.py", line 921, in <module>
+    print(ai_events[5])#我这里模拟的是在前面看到这个列表的长度为5后想要访问最后一个索引时忘记-1的错误
+          ~~~~~~~~~^^^
+IndexError: list index out of range      索引错误：列表索引超出范围
+
+'''
+
+
+
+          
+
+# 3. 修复错误（只用一行代码，不要手动数）
+# 用 len() 函数配合 f-string，打印一句话，展示最后一个里程碑是什么。
+# 提示：最后一个事件的索引等于 len(列表) - 1
+# 把你的代码写在下面：
+#修复代码
+print(ai_events[4])
+print(f"ai_events列表的长度为{len(ai_events)},最后一个历程杯为：{ai_events[4]}")
+
+
+
+print('练习题升级版：')
+ai_events = ['Transformer提出', 'GPT-3发布', 'ChatGPT发布', 'Agent原型出现', '工业AI Agent萌芽']
+
+# 为每个事件增加一个风险描述
+risks = ['算力需求激增', '商业化路径不清晰', '伦理与监管空白', '多步推理不可靠', '物理世界安全挑战']
+
+# 任务：用一行代码，打印出一个清晰展示某个事件及其对应风险的句子。
+# 目标事件是你列表中的“倒数第二个”里程碑，这样能避开最后一个，考验你对中间位置的索引操作。
+# 提示：倒数第二个的索引 = 总长度 - 2，但不要手动数，用 len()
+# （把你的一行代码写在下面）
+#print(f"ai_events的列表长度为{len(ai_events)},risks的列表长度为{len(risks)},{ai_events[3]}的风险为：{risks[3]}")
+#不用数的方式：
+print(f"ai_events的列表长度为:{len(ai_events)},risks的列表长度为{len(risks)},{ai_events[len(ai_events)-2]}的风险为：{risks[len(risks)-2]}")
+
+
+
+print('\n\n\n')
+print('3.5 小结')
+print('这一章我没怎么记住，就是总是想不来这个增加元素用哪一个，删除用哪一个，想不起来怎么拼，这一章未来需要加强')
+
