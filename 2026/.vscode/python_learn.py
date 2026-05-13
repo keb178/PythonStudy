@@ -1021,3 +1021,7 @@ magicians=['alice','david','carolina']
 for magician in magicians:
     print(f"{magician.title()},that was a great trick!")
 print(f"I can not wait to see your next trick,{magician,title()}.\n")#不对
+
+
+
+print("等会有比赛要看，请个假^=^")
