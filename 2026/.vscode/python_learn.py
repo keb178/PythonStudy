@@ -1020,8 +1020,26 @@ print('4.2.2 忘记缩进额外的代码行')
 magicians=['alice','david','carolina']
 for magician in magicians:
     print(f"{magician.title()},that was a great trick!")
-print(f"I can not wait to see your next trick,{magician,title()}.\n")#不对
+print(f"I can not wait to see your next trick,{magician.title()}.\n")#不对
 
 
 
 print("等会有比赛要看，请个假^=^")
+
+
+
+print('\n\n\n')
+print('4.2.3 不必要的缩进')
+message="Hello python world!"
+#        print(message)！！！因为在这里print不是循环的部分，所以Python会报错，需要注意!!!
+
+
+
+print('\n\n\n')
+print('4.2.4 循环后不必要的缩进')
+magicians=['alice','david','carolina']
+for magician in magicians:
+    print(f"{magician.title()},that was a great trick!")
+    print(f"I can not wait to see your next trick,{magician.title()}\n")
+print("That you everyone,that was a great magic show!")
+#这块有问题，但是不知道为什么我的vpn连不上了，今天也心不在焉的，先停一下
