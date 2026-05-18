@@ -1199,3 +1199,4 @@ print('\n\n\n')
 print('练习4-9:立方解析：')
 a=[b**3 for b in range(1,11)]
 print(a)
+print("今天就到这里吧！")
