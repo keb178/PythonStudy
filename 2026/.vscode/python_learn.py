@@ -1032,9 +1032,6 @@ print('\n\n\n')
 print('4.2.3 不必要的缩进')
 message="Hello python world!"
 #        print(message)！！！因为在这里print不是循环的部分，所以Python会报错，需要注意!!!
-
-
-
 print('\n\n\n')
 print('4.2.4 循环后不必要的缩进')
 magicians=['alice','david','carolina']
@@ -1043,3 +1040,162 @@ for magician in magicians:
     print(f"I can not wait to see your next trick,{magician.title()}\n")
 print("That you everyone,that was a great magic show!")
 #这块有问题，但是不知道为什么我的vpn连不上了，今天也心不在焉的，先停一下
+
+
+
+print('\n\n\n')
+print('4.2.5 遗漏了冒号')
+magicians=['alice','david','carolina']
+#for magician in magicians！！！不要忘记加冒号：！！！
+#   print(magician)
+
+
+
+print('\n\n\n')
+print('练习4-1：比萨')
+pizzas=['荔枝披萨','板栗披萨','草莓巧克力披萨']
+for pizza in pizzas:
+    #print(f"我很喜欢吃{pizzas}")!!!注意我这里用的是pizzas是列表的全部了，正确用法应该是pizza
+    print(f"我很喜欢吃{pizza}")
+print('I really love pizza!')
+
+
+
+print('\n\n\n')
+print('练习4-2：动物')
+animals=['dog','cat','rabbit']
+for animal in animals:
+    print(f"A {animal} would make a great pet")
+print('Any of these animals would make a gret pet')
+
+
+
+print('\n\n\n')
+print('4.3 创建数值列表')
+print('4.3.1 使用函数range()')
+for value in range(1,5):
+    print(value)
+
+
+print('\n\n\n')
+for value in range(1,6):
+    print(value)
+
+
+
+print('\n\n\n')
+print('4.3.2 使用range()创建数字列表')
+numbers=list(range(1,6))#!!!注意list()是函数，range()是参数,函数需要东西承接
+print(numbers)
+
+
+#指定步长
+print('\n\n\n')
+even_numbers=list(range(2,11,2))#！！！第二个2是步长！！！
+print(even_numbers)
+
+
+
+print('\n\n\n')
+print('前十个整数的平方')
+squares=[]
+for value in range(1,11):
+    square=value**2
+    squares.append(square)
+print(squares)
+
+
+#当然也可以将中间变量square()去掉
+squares=[]
+for value in range(1,11):
+    squares.append(value**2)
+print(squares)
+
+
+
+print('\n\n\n')
+print('4.3.3 对数字列表执行简单的执行统计')
+#for digits in range(0,10**2):
+#    print(digits)
+#print(min(range))!!!range是python的内置函数名，不是我所创建的列表，想要这样写的话：print(min(range(0,10**2)))
+#print(min(digits))!!!digits是整数不是列表，这样写会报错
+numbers =list(range(0,10**2))
+for digits in numbers:
+    print(digits)
+print(f"numbers列表中的最小数是{min(numbers)}")
+print(f"numbers列表中的最大数是{max(numbers)}")
+print(f"numbers列表中的最大数和最小数的总和是{sum(numbers)}")
+
+
+
+
+print('\n\n\n')
+print('4.3.4 列表解析')
+squares=[value**2 for value in range(1,11)]
+print(squares)
+
+
+
+print('\n\n\n')
+print('练习4-3：数到20')
+#lianxi_4_3=[value,for value in range(1,21)]！！！for前面的表达式和for关键字之间不能有任何的标点符号
+#print(value)!!!deepseek说这个是一个泄露干扰
+lianxi_4_3=[value for value in range(1,21)]
+print(lianxi_4_3)
+for lianxi4_3 in lianxi_4_3:
+    print(lianxi4_3)
+
+print('\n\n\nor')
+lianxi_4_3=list(range(1,21))#我可以关注一下海象运算符:=
+for lianxi4_3 in lianxi_4_3:
+    print(lianxi4_3)
+
+
+'''
+print('\n\n\n')
+print("练习4-4：一百万")
+lianxi_4_4=list(range(1,1000001))
+for lianxi4_4 in lianxi_4_4:
+    print(lianxi4_4)
+'''
+
+
+print('\n\n\n')
+print('练习4-5：一百万求和')
+lianxi_4_5=list(range(1,1000001))
+print(min(lianxi_4_5))
+print(max(lianxi_4_5))
+print(sum(lianxi_4_5))
+
+
+
+print('\n\n\n')
+print('练习4-6：奇数')
+a=list(range(1,21,2))
+for b in a:
+    print(b)
+
+
+
+print('\n\n\n')
+print('练习4-7：3的倍数：')
+a=list(range(3,31,3))
+for c in a:
+    #print(c/2)!!!注意审题!!!
+     print(c)
+
+
+
+print('\n\n\n')
+print('练习4-8：立方')
+a=list(range(1,11))
+for b in a:
+    #print(b,':'b**3)！！！在':'和b**3之间缺了个,!!!
+    print(b,':',b**3)
+
+
+
+print('\n\n\n')
+print('练习4-9:立方解析：')
+a=[b**3 for b in range(1,11)]
+print(a)
