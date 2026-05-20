@@ -1200,3 +1200,175 @@ print('练习4-9:立方解析：')
 a=[b**3 for b in range(1,11)]
 print(a)
 print("今天就到这里吧！")
+
+
+
+print('\n\n\n')
+print('4.4 使用列表的一部分')
+print('4.4.1 切片')
+players=['charles','martina','michael','florence','eli']
+print(players[0:3])
+
+
+players=['cherles','martina','michael','florence','eli']
+print(players[1:4])
+
+
+players=['cherles','martina','michael','florence','eli']
+print(players[:4])
+
+
+players=['cherles','martina','michael','florence','eli']
+print(players[2:])
+
+
+players=['cherles','martina','michael','florence','eli']
+print(players[-3:])
+
+
+
+print('\n\n\n')
+print('4.4.2 遍历切片')
+players=['cherles','martina','michael','florence','eli']
+print("Here are first three players on my team:")
+for player in players[1:3]:
+    print(player.title())
+
+print(players[0:3])
+
+
+
+print('\n\n\n')
+print('4.4.3 复制列表')
+my_foods=['pizza','falafel','carrot cake']
+friend_foods=my_foods[:]
+print('My favorite foods are:')
+print(my_foods)
+
+print("\nMy friend's favorite foods are:")
+print(friend_foods)
+
+#text：当我们复制列表时也可以这样做
+a=my_foods
+#print(a)
+
+
+
+my_foods=['pizza','falafel','carrot cake']
+friend_foods=my_foods[:]
+my_foods.append('cannoli')
+friend_foods.append('ice cream')
+print("My favorite foods are:")
+print(my_foods)
+
+print("\nMy frend's favorite foods are:")
+print(friend_foods)
+print(a)#这里没有出来的原因时：我这里用的my_foods是新的列表，不是前面一个my_foods
+
+
+#我前面使用a=my_foods的用法的错误之处
+my_foods=['pizza','falafel','carrot cake']
+friend_foods=my_foods
+my_foods.append('cannoli')
+friend_foods.append('ice cream')
+print("My favorite foods are:")
+print(my_foods)
+print("\nMy friend's favorite foods are:")
+print(friend_foods)
+#在这里我赋值给friend_foods的ice cream会出现在my_foods的原因是，我在最开始创建了一个贴着my_foods的盒子
+#但是后面我又在这个盒子上加了一个名为“friend_foods”的标签，所以我添加给friend_foods的ice cream会出现在
+#打印my_foods的结果中
+
+
+
+print('\n\n\n')
+print('练习4-10:切片')
+my_foods=['pizza','falafel','carrot cake','炸鸡','汉堡','过油肉拌面','宫保鸡丁','饺子']
+print("The first three items in list are:")
+for my_food in my_foods[:3]:
+    print(my_food.title())
+print("\nThree items from the middle of the are:")
+for my_food in my_foods[2:6]:
+    print(my_food.title())
+print("\nThe last three items in the list are:")
+for my_food in my_foods[-3:]:
+    print(my_food.title())
+
+
+
+print('\n\n\n')
+print('练习4-11：你的比萨，我的比萨')
+#friend_pizzas=my_food[:]!!!这里要注意不能用my_food因为这样的话创建的副本是my_food得了，而不是my_foods的！！！
+friend_pizzas=my_foods[:]
+my_foods.append('荔枝比萨')
+#friend_foods.append('板栗比萨')！！！是friend_pizzas！！！
+friend_pizzas.append('板栗比萨')
+print("My favorite pizzas are:")
+for my_food in my_foods[:]:
+    print(my_food.title())
+#print("My frend's favorite pizza are:")!!!要在MY frend's的前面加上\n要不然会看起来很乱!!! 
+print("\nMy frend's favorite pizza are:")
+#for friend_pizza in friend_foods:!!!这里有好几处错误：1.是friend_pizzas,而不是friend_foods 2.而且我们要加上[:]要不然他鬼知道要怎么搞
+for friend_pizza in friend_pizzas:
+    print(friend_pizza.title())
+
+
+
+print('\n\n\n')
+print("练习4-12：使用多个循环")
+my_foods=['pizza','falsfel','carrot cake']
+for my_food in my_foods:
+    print(my_food.title())
+print("没搞懂他想要干什么")
+
+
+
+print('\n\n\n')
+print("4.5 元组")
+print("4.5.1 定义元组")
+dimensions=(200,50)
+print(dimensions[0])
+print(dimensions[1])
+
+#尝试修改元组元素
+dimensions=(200,50)
+#dimensions[0]=250！！！在python中试图修改元组的操作是被禁止的!!!
+a=1,2,3,4,5,6#在元组中元组是由逗号标识的，圆括号只是让元组看起来更加整洁，更清晰
+print(a[0])
+print(a[1])
+print(a[2])
+
+
+
+print('\n\n\n')
+print("4.5.2 遍历元组中的所有值")
+dimensions=(200,50)
+for dimension in dimensions:
+    print(dimension)
+
+
+
+print('\n\n\n')
+print("4.5.3 修改元组变量")
+dimensions=(200,50)
+print("Original dimensions:")
+for dimension in dimensions:
+    print(dimension)
+
+dimensions=(400,100)
+print("\nModified dimensions:")
+for dimension in dimensions:
+    print(dimension)
+
+
+
+print('\n\n\n')
+print("练习4-13：自助餐：")
+zizhucans=("炸鸡","烤鸡翅","披萨","可口可乐","水果")
+for zizhucan in zizhucans:
+    print(zizhucan)
+#zizhucan[0]=250!看到了吧就是不能修改元组的元素，但是可以修改元组的变量
+print('\n')
+zizhucans_1=("炸鸡","烤鸡翅","披萨","冰激淋","雪碧")
+for zizhucan_1 in zizhucans_1:
+    print(zizhucan_1)
