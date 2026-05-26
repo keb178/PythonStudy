@@ -1372,3 +1372,55 @@ print('\n')
 zizhucans_1=("炸鸡","烤鸡翅","披萨","冰激淋","雪碧")
 for zizhucan_1 in zizhucans_1:
     print(zizhucan_1)
+
+
+
+print('\n\n\n')
+print('4.6 设置代码格式')
+print('4.6.1 格式设置指南')
+
+
+
+print('\n\n\n')
+print('第5章 if语句')
+print('5.1 一个简单实例')
+cars=['audi','bmw','subaru','toyota']
+for car in cars:
+    if car=='bmw':
+        print(car.upper())
+    else:
+        print(car.title())
+
+
+
+print('\n\n\n')
+print('5.2 条件测试')
+print('5.2.1 检查是否相等')
+car='bmw'
+if car=='bmw':
+    print('对了')
+else:
+    print('不对')
+car='audi'
+if car=='bmw':
+    print('对了')
+else:
+    print('不对')
+
+
+
+print('\n\n\n')
+print('5.2.2 检查是否相等时忽略大小写')
+cars=['audi','AUDI']
+for car in cars:
+    if car=='audi':
+        print(car,'true')
+    else:
+        print(car,'false\n')
+#cars.lower()=['audi','AUDI']!!!cars是列表不是字符串，不能够给他用方法！！！
+#for car.lower() in cars:!!!for循环的in前面必须是变量名！！！
+for car in cars:
+    if car.lower() =='audi':
+        print(car,"true")
+    else:
+        print(car,'false')
